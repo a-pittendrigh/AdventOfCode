@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tests and Answers for Advent of Code, Day 2</title>
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.20.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="http://code.jquery.com/qunit/qunit-1.20.0.js"></script>
+  <script src="present.js"></script>
+  <script src="presentWrapper.js"></script>
+  <script src="tests.js"></script>
+  <script src="sample.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <p id = 'answer'>Answer goes here<p/>
+  <script>
+    $( document ).ready(function() {
+        var newPresentWrapper = new PresentWrapper(sample);
+        var feetRequiredToWrapSamplePresents = newPresentWrapper.getWrappingPaperRequired();
+        document.getElementById('answer').innerHTML = "Square feet required to wrap sample presents: " + feetRequiredToWrapSamplePresents;
+    });
+    </script>
+</body>
+</html>
