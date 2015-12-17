@@ -19,7 +19,8 @@
     $( document ).ready(function() {
         var newPresentWrapper = new PresentWrapper(sample);
         var feetRequiredToWrapSamplePresents = newPresentWrapper.getWrappingPaperRequired();
-        document.getElementById('answer').innerHTML = "Square feet required to wrap sample presents: " + feetRequiredToWrapSamplePresents;
+        var ribbonNeededInFeat = newPresentWrapper.getRibbonRequired();
+        document.getElementById('answer').innerHTML = "Square feet required to wrap sample presents: " + feetRequiredToWrapSamplePresents + "<br/> Ribbon: " + ribbonNeededInFeat;
     });
     </script>
 </body>

@@ -14,25 +14,12 @@ var PresentWrapper = function (presents) {
 	};
 	
 	this.getRibbonRequired = function () {
-		var squareUnitsRequired = 0;
-		var logs = [];
+		var ribbonNeeded = 0;
 		for (var i = 0; i < this.presents.length; i++) {
-			var before = squareUnitsRequired;
 			var present = presents[i];
-			var paperForPresent = present.getSquareMeterageOfWrappingPaperRequiredToWrapPresent();
-			squareUnitsRequired = paperForPresent + squareUnitsRequired;
-			if (squareUnitsRequired - before != paperForPresent) {
-				logs.push({
-					paperforpresent : paperForPresent,
-					present : present,
-					before: before,
-					after : squareUnitsRequired,
-					diff : squareUnitsRequired - before
-				});
-			};
+			var paperForPresent = present.getTotalRibbonLen();
+			ribbonNeeded = paperForPresent + ribbonNeeded;
 		};
-		
-		console.log(logs);
-		return squareUnitsRequired;
+		return ribbonNeeded;
 	};
 };
