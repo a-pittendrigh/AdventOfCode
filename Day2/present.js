@@ -10,8 +10,7 @@ var Present = function (len, width, height) {
 			};
 			if (this.width * this.height < smallest) {
 				smallest = this.width * this.height;
-			};			
-			//return sides[0] * sides[1];
+			};
 			return smallest;
 		}
 		this.getSurfaceArea = function () {
@@ -21,8 +20,9 @@ var Present = function (len, width, height) {
 			return this.getSurfaceArea() + this.getAreaOfSmallestSide();
 		}
 		this.getRibbonLength = function () {
-			var dims = [this.len, this.width, this.height].sort();
-			return 2 * (dims [0] + dims [1]);
+			var shortestFace = Math.min(this.len + this.width, this.len + this.height);
+			shortestFace = Math.min(shortestFace, this.width + this.height);
+			return shortestFace * 2;
 		}
 		this.getVolume = function () {
 			return this.len * this.height * this.width;

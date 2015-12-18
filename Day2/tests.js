@@ -54,3 +54,4 @@ QUnit.test( "A present with dimensions 1x1x10 requires 1+1+1+1 = 4 feet of ribbo
   //var newPresent = new Present(20,26,22);
   assert.equal(new Present(1,1,10).getTotalRibbonLen(), 14);//, "Should be 10" );
 });
+//these tests suck.. eventaully i just got frustrated and ran out of care.
