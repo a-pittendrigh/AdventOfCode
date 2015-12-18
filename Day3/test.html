@@ -9,18 +9,15 @@
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
   <script src="http://code.jquery.com/qunit/qunit-1.20.0.js"></script>
-  <script src="present.js"></script>
+  <script src="santa.js"></script>
   <script src="presentWrapper.js"></script>
   <script src="tests.js"></script>
   <script src="sample.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <p id = 'answer'>Answer goes here<p/>
   <script>
-    $( document ).ready(function() {
-        var newPresentWrapper = new PresentWrapper(sample);
-        var feetRequiredToWrapSamplePresents = newPresentWrapper.getWrappingPaperRequired();
-        var ribbonNeededInFeat = newPresentWrapper.getRibbonRequired();
-        document.getElementById('answer').innerHTML = "Square feet required to wrap sample presents: " + feetRequiredToWrapSamplePresents + "<br/> Ribbon: " + ribbonNeededInFeat;
+    $(document).ready(function() {
+        
     });
     </script>
 </body>
