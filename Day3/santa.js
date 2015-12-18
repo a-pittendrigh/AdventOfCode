@@ -1,4 +1,9 @@
-var Santa = function () {	
+var Santa = function () {
+	this.notifier = new Observer();
+	this.addObserver = function (obs) { 
+		this.notifier.addObserver(obs) 
+	};
+	//there should probably be a notify too, but w.e
 	this.props = function () {
 		var east = 0, west = 0, north = 0, south = 0;
 		return {
@@ -27,20 +32,27 @@ var Santa = function () {
 				}
 			}
 		};
-	}()
+	}();	
+	this.notifyOfStateChange = function () {
+		this.notifier.notify(this.getState());
+	};
 	this.getState = function () {
-		return this.props.getState();	
+		return this.props.getState();
 	};
 	this.goNorth = function () {
 		this.props.goNorth();
+		this.notifyOfStateChange();
 	}
 	this.goSouth = function () {
 		this.props.goSouth();
+		this.notifyOfStateChange();
 	}
 	this.goEast = function () {
 		this.props.goEast();
+		this.notifyOfStateChange();
 	}
 	this.goWest = function () {
 		this.props.goWest();
+		this.notifyOfStateChange();
 	}
 };

@@ -10,14 +10,23 @@
   <div id="qunit-fixture"></div>
   <script src="http://code.jquery.com/qunit/qunit-1.20.0.js"></script>
   <script src="santa.js"></script>
-  <script src="presentWrapper.js"></script>
   <script src="tests.js"></script>
   <script src="sample.js"></script>
+  <script src="instructor.js"></script>
+  <script src="observer.js"></script>
+  <script src = "HouseVisitRecorder.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <p id = 'answer'>Answer goes here<p/>
   <script>
     $(document).ready(function() {
-        
+      var santa = new Santa();
+      var houseVisitObserver = new HouseVisitRecorder();
+      santa.addObserver(houseVisitObserver);
+      var interpreter = new Instructor(santa);  
+      for (var i = 0; i < directions.length; i++) {
+        interpreter.doInstruction(directions[i]);
+      };
+      //console.log(santa.getState());
     });
     </script>
 </body>
