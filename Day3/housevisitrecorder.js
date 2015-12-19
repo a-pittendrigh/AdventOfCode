@@ -7,6 +7,7 @@ var HouseVisitRecorder = function () {
 			var currentHome = this.homesVisited[i++];
 			found = currentHome.equals(homeLocation);
 		};
+		return found;
 	}
 
 	this.notify = function (state) {

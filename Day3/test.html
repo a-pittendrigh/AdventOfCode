@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Tests and Answers for Advent of Code, Day 2</title>
+  <title>Tests and Answers for Advent of Code, Day 3</title>
   <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.20.0.css">
 </head>
 <body>
@@ -27,8 +27,8 @@
       for (var i = 0; i < directions.length; i++) {
         interpreter.doInstruction(directions[i]);
       };
-      console.log(houseVisitObserver.getHomesVisited() + 1);
-      console.log("same size: " + directions.length);
+      var homesVisited = houseVisitObserver.getHomesVisited() + 1;
+      document.getElementById('answer').innerHTML = "Homes Visited: " + homesVisited;
     });
     </script>
 </body>
