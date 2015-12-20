@@ -51,3 +51,38 @@ QUnit.test( "East is 1 after going East", function(assert) {
   newSanta.goEast();
   assert.equal(newSanta.getState().east, 1);
 });
+QUnit.test( "^v delivers to three houses with alternating strat", function(assert) {
+  var roboSanta = new Santa();
+    var alternatingSanta = new Santa();
+    var alternatingVisitRecorder = new HouseVisitRecorder();
+    alternatingSanta.addObserver(alternatingVisitRecorder);
+    roboSanta.addObserver(alternatingVisitRecorder);
+    var alternatingInterpreter = new Instructor(alternatingSanta, roboSanta, true, '^v');
+    alternatingInterpreter.followMap();
+    assert.equal(alternatingVisitRecorder.getHomesVisited(), 3);
+});
+QUnit.test( "^>v< delivers to three houses with alternating strat", function(assert) {
+    var roboSanta = new Santa();
+    var alternatingSanta = new Santa();
+    var alternatingVisitRecorder = new HouseVisitRecorder();
+    //var alternatingVisitRecorder1 = new HouseVisitRecorder();
+    alternatingSanta.addObserver(alternatingVisitRecorder);
+    roboSanta.addObserver(alternatingVisitRecorder);
+    var alternatingInterpreter = new Instructor(alternatingSanta, roboSanta, true, '^>v<');
+    alternatingInterpreter.followMap();
+    console.log(roboSanta.getState());
+    console.log(alternatingSanta.getState());
+    assert.equal(alternatingVisitRecorder.getHomesVisited(), 3);
+});
+//^v^v^v^v^v now delivers presents to 11 houses, with Santa going one direction and Robo-Santa going the other.
+QUnit.test( "^v^v^v^v^v delivers to 11 houses with alternating strat", function(assert) {
+    var roboSanta = new Santa();
+    var alternatingSanta = new Santa();
+    var alternatingVisitRecorder = new HouseVisitRecorder();
+    //var alternatingVisitRecorder1 = new HouseVisitRecorder();
+    alternatingSanta.addObserver(alternatingVisitRecorder);
+    roboSanta.addObserver(alternatingVisitRecorder);
+    var alternatingInterpreter = new Instructor(alternatingSanta, roboSanta, true, '^v^v^v^v^v');
+    alternatingInterpreter.followMap();
+    assert.equal(alternatingVisitRecorder.getHomesVisited(), 11);
+});

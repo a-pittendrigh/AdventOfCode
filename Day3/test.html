@@ -20,15 +20,15 @@
   <p id = 'answer'>Answer goes here<p/>
   <script>
     $(document).ready(function() {
-      var santa = new Santa();
-      var houseVisitObserver = new HouseVisitRecorder();
-      santa.addObserver(houseVisitObserver);
-      var interpreter = new Instructor(santa);  
-      for (var i = 0; i < directions.length; i++) {
-        interpreter.doInstruction(directions[i]);
-      };
-      var homesVisited = houseVisitObserver.getHomesVisited() + 1;
-      document.getElementById('answer').innerHTML = "Homes Visited: " + homesVisited;
+      var roboSanta = new Santa();
+        var alternatingSanta = new Santa();
+        var alternatingVisitRecorder = new HouseVisitRecorder();
+        alternatingSanta.addObserver(alternatingVisitRecorder);
+        roboSanta.addObserver(alternatingVisitRecorder);
+        var alternatingInterpreter = new Instructor(alternatingSanta, roboSanta, true, directions);
+        alternatingInterpreter.followMap();
+        alternatingVisitRecorder.getHomesVisited();
+        document.getElementById('answer').innerHTML = alternatingVisitRecorder.getHomesVisited();
     });
     </script>
 </body>

@@ -1,5 +1,5 @@
 var HouseVisitRecorder = function () {	
-	this.homesVisited = [];
+	this.homesVisited = [new House(0,0,0,0)];
 	this.isHomeInCollection = function (homeLocation) {
 		var found = false;
 		var i = 0;

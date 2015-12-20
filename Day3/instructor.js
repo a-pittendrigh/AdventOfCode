@@ -1,15 +1,28 @@
-var Instructor = function (santa) {
+var Instructor = function (santa, roboSanta, alternate, map) {
 	this.santa = santa;
+    this.roboSanta = roboSanta;
+    this.alternate = alternate;
+    this.stepCounter = 0;
+    this.map = map;
 	this.doInstruction = function (character) {
-		var santa = this.santa;
+        var instructionRecipient = this.santa;
+        if (this.alternate && this.stepCounter % 2 == 1) {
+             instructionRecipient = this.roboSanta;
+        };
 		if (character === '>') {
-			santa.goEast();	
+			instructionRecipient.goEast();
 		} else if (character === '<') {
-			santa.goWest()
+			instructionRecipient.goWest();
 		} else if (character === '^') {
-			santa.goNorth()
+			instructionRecipient.goNorth();
 		} else if (character === 'v') {
-			santa.goSouth()
+			instructionRecipient.goSouth();
 		};
-	}
+        this.stepCounter++;
+	};
+    this.followMap = function () {
+        for (var i = 0; i < this.map.length; i++) {
+            this.doInstruction(this.map[i]);
+        };
+    }
 };
