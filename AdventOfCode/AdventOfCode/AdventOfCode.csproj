@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day5\StringAnalyzers\AdventOfCodeSpecification.cs" />
     <Compile Include="Day5\StringAnalyzers\ForbiddenStringMatcher.cs" />
-    <Compile Include="Day5\Interfaces\IStringAnalyzer.cs" />
-    <Compile Include="Day5\StringAnalyzers\BaseStringAnalyzer.cs" />
-    <Compile Include="Day5\StringAnalyzers\RepeatLetterAnalyzer.cs" />
-    <Compile Include="Day5\StringAnalyzers\VowelStringAnalyzer.cs" />
+    <Compile Include="Day5\Interfaces\IStringAnalyzerSpecification.cs" />
+    <Compile Include="Day5\StringAnalyzers\BaseStringAnalyzerSpecification.cs" />
+    <Compile Include="Day5\StringAnalyzers\RepeatLetterAnalyzerSpecification.cs" />
+    <Compile Include="Day5\StringAnalyzers\VowelStringAnalyzerSpecification.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

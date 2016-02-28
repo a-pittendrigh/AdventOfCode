@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using AdventOfCode.Day5;
+using AdventOfCode.Day5.StringAnalyzers;
 
 namespace Day5Tests.Day5
 {

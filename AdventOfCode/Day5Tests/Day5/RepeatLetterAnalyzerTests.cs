@@ -1,5 +1,5 @@
 ﻿using System;
-using AdventOfCode.Day5.Interfaces;
+using AdventOfCode.Day5.StringAnalyzers;
 using NUnit.Framework;
 
 namespace Day5Tests.Day5
@@ -10,21 +10,21 @@ namespace Day5Tests.Day5
         [Test]
         public void MatchesXX()
         {
-            RepeatLetterAnalyzer ra = new RepeatLetterAnalyzer();
+            RepeatLetterAnalyzerSpecification ra = new RepeatLetterAnalyzerSpecification();
             Assert.IsTrue(ra.IsGood("xx"));
         }
 
         [Test]
         public void MatchesABCDDE()
         {
-            RepeatLetterAnalyzer ra = new RepeatLetterAnalyzer();
+            RepeatLetterAnalyzerSpecification ra = new RepeatLetterAnalyzerSpecification();
             Assert.IsTrue(ra.IsGood("abcdde"));
         }
 
         [Test]
         public void MatchesAABBCCDD()
         {
-            RepeatLetterAnalyzer ra = new RepeatLetterAnalyzer();
+            RepeatLetterAnalyzerSpecification ra = new RepeatLetterAnalyzerSpecification();
             Assert.IsTrue(ra.IsGood("aabbccdd"));
         }
     }

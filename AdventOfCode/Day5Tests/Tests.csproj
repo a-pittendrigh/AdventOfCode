@@ -50,6 +50,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Day5\AdventOfCodeSpecificationTests.cs" />
     <Compile Include="Day5\ForbiddenStringMatcherTest.cs" />
     <Compile Include="Day5\RepeatLetterAnalyzerTests.cs" />
     <Compile Include="Day5\VowelStringAnalyzerTests.cs" />

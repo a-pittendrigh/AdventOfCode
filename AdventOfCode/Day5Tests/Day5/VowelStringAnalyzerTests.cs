@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AdventOfCode;
 using AdventOfCode.Day5;
+using AdventOfCode.Day5.StringAnalyzers;
 using NUnit.Framework;
 
 namespace Tests.Day5
@@ -15,29 +16,29 @@ namespace Tests.Day5
         [Test]
         public void AnalyzerFindsAEIToBeGood()
         {
-            VowelStringAnalyzer analyzer = new VowelStringAnalyzer();
-            Assert.IsTrue(analyzer.IsGood("aei"));
+            VowelStringAnalyzerSpecification analyzerSpecification = new VowelStringAnalyzerSpecification();
+            Assert.IsTrue(analyzerSpecification.IsGood("aei"));
         }
 
         [Test]
         public void AnalyzerFindsXAZEGOVToBeGood()
         {
-            VowelStringAnalyzer analyzer = new VowelStringAnalyzer();
-            Assert.IsTrue(analyzer.IsGood("xazegov"));
+            VowelStringAnalyzerSpecification analyzerSpecification = new VowelStringAnalyzerSpecification();
+            Assert.IsTrue(analyzerSpecification.IsGood("xazegov"));
         }
 
         [Test]
         public void AnalyzerFindsAEIOUAEIOUAEIOUToBeGood()
         {
-            VowelStringAnalyzer analyzer = new VowelStringAnalyzer();
-            Assert.IsTrue(analyzer.IsGood("aeiouaeiouaeiou"));
+            VowelStringAnalyzerSpecification analyzerSpecification = new VowelStringAnalyzerSpecification();
+            Assert.IsTrue(analyzerSpecification.IsGood("aeiouaeiouaeiou"));
         }
 
         [Test]
         public void AnalyzerFindsAToBeBad()
         {
-            VowelStringAnalyzer analyzer = new VowelStringAnalyzer();
-            Assert.IsFalse(analyzer.IsGood("a"));
+            VowelStringAnalyzerSpecification analyzerSpecification = new VowelStringAnalyzerSpecification();
+            Assert.IsFalse(analyzerSpecification.IsGood("a"));
         }
     }
 }
