@@ -35,6 +35,16 @@ namespace AdventOfCode.Day5.StringAnalyzers
             return new ForbiddenStringMatcher();
         }
 
+        public IStringAnalyzerSpecification ContainsNonOverlappingPair()
+        {
+            return new NonOverLappingPairSpecification();
+        }
+
+        public IStringAnalyzerSpecification ContainsDuplicateSeparatedByOne()
+        {
+            return new DuplicatedSeperatedByOnSpecification();
+        }
+
         public abstract bool IsGood(string subject);
     }
 }

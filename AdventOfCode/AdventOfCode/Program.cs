@@ -13,11 +13,14 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
+            int answer;
             string[] input =
                 InputToArrayReader.ReadFile(
                     @"D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\AdventOfCode\Day5\input.txt");
             Day5Runner day5 = new Day5Runner();
-            int answer = day5.Run(input);
+            answer = day5.Run(input, 1);
+            Console.WriteLine(answer);
+            answer = day5.Run(input, 2);
             Console.WriteLine(answer);
         }
     }

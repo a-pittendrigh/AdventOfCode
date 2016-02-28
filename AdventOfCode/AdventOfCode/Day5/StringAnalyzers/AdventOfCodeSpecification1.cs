@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode.Day5.StringAnalyzers
 {
-    public class AdventOfCodeSpecification : BaseStringAnalyzerSpecification
+    public class AdventOfCodeSpecification1 : BaseStringAnalyzerSpecification
     {
         public override bool IsGood(string subject)
         {

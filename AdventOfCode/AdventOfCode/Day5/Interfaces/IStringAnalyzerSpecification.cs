@@ -13,5 +13,7 @@ namespace AdventOfCode.Day5
         IStringAnalyzerSpecification HasAtLeastThreeVowels();
         IStringAnalyzerSpecification HasAtLeastOneLetterThatAppearsTwiceInARow();
         IStringAnalyzerSpecification DoesNotContainForbiddenStrings();
+        IStringAnalyzerSpecification ContainsNonOverlappingPair();
+        IStringAnalyzerSpecification ContainsDuplicateSeparatedByOne();
     }
 }

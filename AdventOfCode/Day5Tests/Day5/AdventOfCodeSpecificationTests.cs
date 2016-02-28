@@ -12,7 +12,7 @@ namespace Day5Tests.Day5
     [TestFixture]
     public class AdventOfCodeSpecificationTests
     {
-        AdventOfCodeSpecification spec = new AdventOfCodeSpecification();
+        AdventOfCodeSpecification1 spec = new AdventOfCodeSpecification1();
         //I can't think of a better namer ;<
         [Test]
         public void String_Ugknbfddgicrmopn_IsNice()

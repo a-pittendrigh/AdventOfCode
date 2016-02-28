@@ -44,10 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Day5\Day5Runner.cs" />
-    <Compile Include="Day5\StringAnalyzers\AdventOfCodeSpecification.cs" />
+    <Compile Include="Day5\StringAnalyzers\AdventOfCodeSpecification2.cs" />
+    <Compile Include="Day5\StringAnalyzers\AdventOfCodeSpecification1.cs" />
+    <Compile Include="Day5\StringAnalyzers\DuplicatedSeperatedByOnSpecification.cs" />
     <Compile Include="Day5\StringAnalyzers\ForbiddenStringMatcher.cs" />
     <Compile Include="Day5\Interfaces\IStringAnalyzerSpecification.cs" />
     <Compile Include="Day5\StringAnalyzers\BaseStringAnalyzerSpecification.cs" />
+    <Compile Include="Day5\StringAnalyzers\NonOverLappingPairSpecification.cs" />
     <Compile Include="Day5\StringAnalyzers\RepeatLetterAnalyzerSpecification.cs" />
     <Compile Include="Day5\StringAnalyzers\VowelStringAnalyzerSpecification.cs" />
     <Compile Include="Input Readers\InputToArrayReader.cs" />
