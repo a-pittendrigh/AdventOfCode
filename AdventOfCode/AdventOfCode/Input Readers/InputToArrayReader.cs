@@ -18,7 +18,10 @@ namespace AdventOfCode.Input_Readers
                new System.IO.StreamReader(filePath);
             while ((line = file.ReadLine()) != null)
             {
-                lines.Add(line);
+                if (!String.IsNullOrEmpty(line))
+                {
+                    lines.Add(line.Trim());
+                }
             }
 
             file.Close();
