@@ -1,0 +1,9 @@
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\bin\Debug\Day5Tests.dll
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\bin\Debug\Day5Tests.pdb
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\bin\Debug\AdventOfCode.exe
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\bin\Debug\nunit.framework.dll
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\bin\Debug\AdventOfCode.pdb
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\bin\Debug\nunit.framework.xml
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\obj\Debug\Day5Tests.csprojResolveAssemblyReference.cache
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\obj\Debug\Day5Tests.dll
+D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\Day5Tests\obj\Debug\Day5Tests.pdb
