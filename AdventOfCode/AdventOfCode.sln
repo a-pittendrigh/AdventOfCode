@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode", "AdventOfCode\AdventOfCode.csproj", "{5707B540-3EDE-4BF9-A7E0-66948EAFA176}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day5Tests", "Day5Tests\Day5Tests.csproj", "{1A58C622-69A0-4622-9E41-3EEC24101641}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Day5Tests\Tests.csproj", "{1A58C622-69A0-4622-9E41-3EEC24101641}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
