@@ -54,6 +54,7 @@
     <Compile Include="Day5\ForbiddenStringMatcherTest.cs" />
     <Compile Include="Day5\RepeatLetterAnalyzerTests.cs" />
     <Compile Include="Day5\VowelStringAnalyzerTests.cs" />
+    <Compile Include="Day6\LightDisplayTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

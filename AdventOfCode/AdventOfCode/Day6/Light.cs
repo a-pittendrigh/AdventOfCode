@@ -11,13 +11,14 @@ namespace AdventOfCode.Day6
 {
     public class Light : INotifyPropertyChanged
     {
-        public Light()
+        public Light(PropertyChangedEventHandler handler)
         {
-            InitFields();
+            InitFields(handler);
         }
 
-        private void InitFields()
+        private void InitFields(PropertyChangedEventHandler handler)
         {
+            PropertyChanged += handler;
             IsOn = false;
         }
 
@@ -28,8 +29,11 @@ namespace AdventOfCode.Day6
             get { return _isOn; }
             set
             {
-                _isOn = value;
-                NotifyPropertyChanged(nameof(IsOn));
+                if (_isOn != value)
+                {
+                    _isOn = value;
+                    NotifyPropertyChanged(nameof(IsOn));
+                }
             }
         }
 
