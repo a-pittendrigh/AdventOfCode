@@ -48,7 +48,7 @@ namespace AdventOfCode.Day6
             if (lightThatChanged != null)
             {
                 //Will have to change this if I need to implement other properties.
-                int onLightCountChange = lightThatChanged.IsOn ? 1 : 0;
+                int onLightCountChange = lightThatChanged.IsOn ? 1 : -1;
                 LightsLit += onLightCountChange;
             }
         }
