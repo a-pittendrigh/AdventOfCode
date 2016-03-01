@@ -53,10 +53,13 @@
     <Compile Include="Day5\StringAnalyzers\NonOverLappingPairSpecification.cs" />
     <Compile Include="Day5\StringAnalyzers\RepeatLetterAnalyzerSpecification.cs" />
     <Compile Include="Day5\StringAnalyzers\VowelStringAnalyzerSpecification.cs" />
+    <Compile Include="Day6\Day6Runner.cs" />
     <Compile Include="Day6\Enums\LightActionEnum.cs" />
     <Compile Include="Day6\Light.cs" />
     <Compile Include="Day6\LightDisplay.cs" />
+    <Compile Include="Enums\AdventOfCodeProblemEnum.cs" />
     <Compile Include="Input Readers\InputToArrayReader.cs" />
+    <Compile Include="Interfaces\IAdventOfCodeProblemRunner.cs" />
     <Compile Include="Interfaces\IInputReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\Annotations.cs" />

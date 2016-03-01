@@ -5,7 +5,10 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using AdventOfCode.Day5;
+using AdventOfCode.Day6;
+using AdventOfCode.Enums;
 using AdventOfCode.Input_Readers;
+using AdventOfCode.Interfaces;
 
 namespace AdventOfCode
 {
@@ -22,6 +25,23 @@ namespace AdventOfCode
             Console.WriteLine(answer);
             answer = day5.Run(input, 2);
             Console.WriteLine(answer);
+
+            //Day6, Part 1
+            RunProblem(GetRunner(AdventOfCodeProblemEnum.Day6Part1), input);
+        }
+
+        private static IAdventOfCodeProblemRunner GetRunner(AdventOfCodeProblemEnum problem)
+        {
+            switch (problem)
+            {
+                case AdventOfCodeProblemEnum.Day6Part1:
+                    return new Day6Runner();
+            }            
+        }
+
+        private static int RunProblem(IAdventOfCodeProblemRunner runner, string[] input)
+        {
+            return runner.Run(input);
         }
     }
 }
