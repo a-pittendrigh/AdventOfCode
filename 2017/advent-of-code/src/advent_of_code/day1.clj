@@ -17,8 +17,9 @@
   (def letters (count captcha))
   (def max-position (- letters 1))
   (loop [sum 0 position 0]
+    (def new-sum (+ sum (value-if-match position captcha)))
     (if (>= position max-position)
-      sum
+      new-sum
       (recur
-       (+ sum (value-if-match position captcha))
+       new-sum
        (+ 1 position)))))
