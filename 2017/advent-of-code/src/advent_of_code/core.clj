@@ -3,14 +3,8 @@
    [advent-of-code.day1 :as day1])
   (:gen-class))
 
-(def input "1122")
-(def expectedOutPut 3)
-
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
 
-  (println (day1/sum-of-captcha input))
-  (day1/sum-of-captcha "1111")
-  (day1/sum-of-captcha "1234")
-  (day1/sum-of-captcha "91212129"))
+  (def day-1-input (slurp "resources/day1-input.txt"))
+  (println "Day 1: " (day1/sum-of-captcha day-1-input)))
