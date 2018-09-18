@@ -1,6 +1,0 @@
-D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\AdventOfCode.exe.config
-D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\AdventOfCode.exe
-D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\AdventOfCode\bin\Debug\AdventOfCode.pdb
-D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.csprojResolveAssemblyReference.cache
-D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.exe
-D:\Dev\Code\PersonalProjects\AdventOfCode\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.pdb
